@@ -3,7 +3,7 @@ FROM golang:alpine
 LABEL maintainer "jinlin.gan@gmail.com"
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh gcc
+    apk add --no-cache bash git openssh gcc g++
 
 RUN go get github.com/Masterminds/glide
 
